@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- extra outer layout to fill the remaining space with white background. Otherwise the Scrollview
+     wouldn't fill the whole drawer -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffffff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:saveEnabled="false"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/menuitem_calculator"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuCalculatorClick"
+                android:background="@drawable/drawer_menuitem_background"
+                android:clickable="true"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_calculator"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuAlgebraClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_algebra"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submenu_arrow"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuAnalysisClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_analysis"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submenu_arrow"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuGeometryClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_geometry"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submenu_arrow"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuStochasticClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_stochastic"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submenu_arrow"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuUnitConversionClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_unit_conversion"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_submenu_arrow"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/drawer_menuitem_seperator_line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:onClick="onDrawerMenuSettingsClick"
+                android:clickable="true"
+                android:background="@drawable/drawer_menuitem_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menuitem_dummy"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_menuitem_settings"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_dark_blue"
+                    android:layout_marginLeft="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

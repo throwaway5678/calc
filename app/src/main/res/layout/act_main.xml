@@ -1,0 +1,29 @@
+
+
+
+<com.awesomecalc.awesomecalculator.DrawerLayoutWithoutBackButtonHandling
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff" />
+
+
+
+    <!-- The left navigation drawer -->
+    <com.awesomecalc.awesomecalculator.DrawerContainerLayout
+        android:id="@+id/navigation_drawer_container"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left" />
+
+
+</com.awesomecalc.awesomecalculator.DrawerLayoutWithoutBackButtonHandling>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- background for every LinearLayout menuitem in the navigation drawer
+     changes the background to a light grey when the LinearLayout is clicked
+     (LinearLayout must have attribut clickable as true)
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="#CFCFCF"/>
+    </item>
+</selector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="KeyboardButton">
+        <attr name="buttonText" format="string"/>
+        <attr name="buttonImage" format="reference"/>
+        <attr name="buttonPadding" format="dimension"/>
+        <attr name="buttonPaddingTop" format="dimension"/>
+        <attr name="buttonPaddingBottom" format="dimension"/>
+        <attr name="buttonPaddingLeft" format="dimension"/>
+        <attr name="buttonPaddingRight" format="dimension"/>
+        <attr name="buttonMargin" format="dimension"/>
+        <attr name="buttonMarginTop" format="dimension"/>
+        <attr name="buttonMarginBottom" format="dimension"/>
+        <attr name="buttonMarginLeft" format="dimension"/>
+        <attr name="buttonMarginRight" format="dimension"/>
+        <attr name="buttonBackground" format="color|reference"/>
+        <attr name="alpha" format="float"/>
+        <attr name="buttonSingleLine" format="boolean"/>
+        <attr name="buttonTextColor" format="reference|color"/>
+        <attr name="buttonTextSize" format="dimension"/>
+        <attr name="rowCount" format="integer"/>
+        <attr name="keyCode" format="string"/>
+        <attr name="buttonFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MathKeyboard">
+        <attr name="rootParentView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MathView">
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="minTextSize" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="textColor" format="reference|color"/>
+        <attr name="focusTextColor" format="reference|color"/>
+        <attr name="focusColor" format="reference|color"/>
+        <attr name="font" format="string"/>
+        <attr name="readOnly" format="boolean"/>
+    </declare-styleable>
+
+
+</resources>

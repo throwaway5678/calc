@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/top_shadow"/>
+
+        <com.awesomecalc.awesomecalculator.BlurredLinearLayout
+            android:id="@+id/primary_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <com.awesomecalc.awesomecalculator.KeyboardViewPager
+                android:id="@+id/math_keyboard_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/keyboard_current_page_indicators"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ff802171"
+                    android:src="@drawable/ic_keyboard_indicator_clipboard"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ff802171"
+                    android:src="@drawable/ic_keyboard_indicator_const"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ff802171"
+                    android:src="@drawable/ic_keyboard_indicator_home"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:adjustViewBounds="true"
+                    android:background="#ff802171"
+                    android:src="@drawable/ic_keyboard_indicator_func"/>
+
+            </LinearLayout>
+
+        </com.awesomecalc.awesomecalculator.BlurredLinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/blur_overlay"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:alpha="0.3"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/alt_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        />
+
+</FrameLayout>

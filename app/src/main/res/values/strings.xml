@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AwesomeCalculator</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- main menu items -->
+    <string name="drawer_menuitem_calculator">Calculator</string>
+    <string name="drawer_menuitem_algebra">Algebra</string>
+    <string name="drawer_menuitem_analysis">Analysis</string>
+    <string name="drawer_menuitem_geometry">Analytic Geometry</string>
+    <string name="drawer_menuitem_stochastic">Stochastic</string>
+    <string name="drawer_menuitem_unit_conversion">Unit Conversion</string>
+    <string name="drawer_menuitem_settings">Settings</string>
+
+    <!-- algebra submenu items -->
+    <string name="drawer_submenuitem_solve_for_x">Solve for X</string>
+    <string name="drawer_submenuitem_linear_system_of_equations">Linear System</string>
+    <string name="drawer_submenuitem_nonlinear_system_of_equations">Non-Linear System</string>
+    <string name="drawer_submenuitem_fraction_diagram">Fraction Diagram</string>
+    <string name="drawer_submenuitem_common_divisor">Common Divisor</string>
+
+    <!-- analysis submenu items -->
+    <string name="drawer_submenuitem_function_plotter">Function Plotter</string>
+    <string name="drawer_submenuitem_complete_analysis">Complete Analysis</string>
+    <string name="drawer_submenuitem_table">Table</string>
+    <string name="drawer_submenuitem_derives">Derives</string>
+    <string name="drawer_submenuitem_intersection">Intersection</string>
+    <string name="drawer_submenuitem_interpolation">Interpolation</string>
+
+    <!-- geometry submenu items -->
+    <string name="drawer_submenuitem_positional_relations">Positional Relations</string>
+
+    <!-- stochastic submenu items -->
+    <string name="drawer_submenuitem_binomial">Binomial Coefficient</string>
+    <string name="drawer_submenuitem_normal_distribution">Normal Distribution</string>
+    <string name="drawer_submenuitem_levy_distribution">Levy Distribution</string>
+
+    <!-- unit conversion submenu items -->
+    <string name="drawer_submenuitem_numeral_systems">Numeral Systems</string>
+    <string name="drawer_submenuitem_currency">Foreign Currency</string>
+
+</resources>

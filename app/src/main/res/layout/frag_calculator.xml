@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:id="@+id/root"
+    android:clipChildren="false">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:scrollbars="none"
+        android:saveEnabled="true"
+        android:overScrollMode="never">
+
+        <com.awesomecalc.awesomecalculator.MathView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:text="3/((1+2)*3+(#pow(1,2)))-#log(1,4)-#fract(#fract(6,#pow(1,2)),#log(3,4))+#root(2,256)+#root(#pow(1,2)+3,#pow(4,5))+#pow(3,#pow(4,5))+#log(1,#pow(1,#pow(2,#pow(3,#pow(4,5)))))+(#pow(1,2))+#pow(1,#fract(1,2))+#root(2,#log(#pow(1,2),2))"
+            custom:textSize="40sp"
+            custom:minTextSize="0sp"
+            custom:strokeWidth="2sp"
+            custom:focusTextColor="@color/white"
+            custom:focusColor="@color/pink_500"
+            android:background="@color/white"/>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffffff"/>
+
+    <com.awesomecalc.awesomecalculator.MathKeyboard
+        android:layout_height="236dp"
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        custom:rootParentView="@id/root"/>
+</LinearLayout>
